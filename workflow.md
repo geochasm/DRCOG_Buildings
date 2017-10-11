@@ -39,7 +39,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ### Selecting a task in the Tasking Manager
 
- * Choose which area you want to work on from **[http://labuildingsimport.com](http://labuildingsimport.com)** and click **Start Mapping**.
+ * Choose which area you want to work on from **[http://demo.geochasm.com/osmtm/](http://demo.geochasm.com/osmtm/)** and click **Start Mapping**.
  * Download current data in OSM by clicking **Edit in JOSM**.
  
 ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/osmtm_proj_pg.PNG)
