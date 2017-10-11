@@ -42,7 +42,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * Choose which area you want to work on from **[http://labuildingsimport.com](http://labuildingsimport.com)** and click **Start Mapping**.
  * Download current data in OSM by clicking **Edit in JOSM**.
  
-![download_osm](https://cloud.githubusercontent.com/assets/353700/14101327/6f8b279a-f5b1-11e5-83ef-b28d00afca62.gif)
+![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/osmtm_proj_pg.PNG)
  
  * This will load the existing data from OpenStreetMap (`Data Layer 1`) and another background layer for the boundaries of the task (`Tasking Manager - #2`).  You will work only within the task boundary.
  
