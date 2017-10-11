@@ -6,7 +6,7 @@ How to import
 ### Creating an import account
 
  * OSM best practices require that you [do not use your normal OSM account for the imports](http://wiki.openstreetmap.org/wiki/Import/Guidelines#Use_a_dedicated_user_account). Create a new account for this purpose. 
- Usually, it's your existing OSM username followed by `_imports` (e.g. `manings_imports or manings_labuilding)`.
+ Usually, it's your existing OSM username followed by `_imports` (e.g. `tekim_imports or tekim_drcog)`.
  Post your import account username in this [ticket](http://github.com/osmlab/labuildings/issues/40).
 
 ### Getting familiar with JOSM
