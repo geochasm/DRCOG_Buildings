@@ -156,7 +156,7 @@ If it's larger, like a strip mall split into pieces, then do:
 
  * JOSM [GeoChat](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/GeoChat) feature.
  * Twitter hashtag `#labuildings`.
- * Befriend other mappers on openstreetmap.com.
+ * Befriend other mappers on openstreetmap.org
  
 ### Thanks to the LA Buildings Import
 * This import workflow guide is based on the guide published by the Los Angeles building import at **[https://github.com/osmlab/labuildings/blob/master/IMPORTING.md](https://github.com/osmlab/labuildings/blob/master/IMPORTING.md)**.
