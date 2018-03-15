@@ -7,7 +7,7 @@ How to import
 
  * OSM best practices require that you [do not use your normal OSM account for the imports](http://wiki.openstreetmap.org/wiki/Import/Guidelines#Use_a_dedicated_user_account). Create a new account for this purpose. 
  Usually, it's your existing OSM username followed by `_imports` (e.g. `tekim_imports or tekim_drcog)`.
- Post your import account username in this [ticket](http://github.com/osmlab/labuildings/issues/40).
+ Post your import account username in this [ticket](https://github.com/geochasm/DRCOG_Buildings/issues/1).
 
 ### Getting familiar with JOSM
 
@@ -17,36 +17,24 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ### Check out a task on the tasking manager
 
- * Tasks will be available on **[http://demo.geochasm.com/osmtm/](http://demo.geochasm.com/osmtm/)**.
+ * Tasks will be available on **[http://tasking-manager.mapsarecool.com/](http://tasking-manager.mapsarecool.com/)**.
  * Priority: Pending review of import tasks by DRCOG import team.
 
 ## Import workflow
 
-### Download and install the auto-tools plugin
- * DELETE THIS SECTION; not needed as no building are split at task boundaries; just left it in for reference for now
- * The good folks at Mapbox created a plugin to merge building shapes sliced by parcel boundaries. You can [find it here](https://github.com/mapbox/auto-tools). 
-
-### Activating JOSM Remote Control
- * Working on adding this feature to the DRCOG buildings import tasks; for now OSM file must be manually downloaded
- * Open JOSM and activate JOSM Remote Control. In the JOSM menu, for Windows, select **Edit > Preferences...** or press `F12`. For Mac, select **JOSM > Preferences...** or press, `⌘,`.
- * Click on the remote control icon.
- * Select **Enable Remote Control** and click **OK**.
- 
- ![josm_rc](https://cloud.githubusercontent.com/assets/353700/13667682/adc1f10c-e6dd-11e5-8f01-e83a52460bfd.gif)
-
-### Adding Bing imagery background
- * From the **Imagery** menu, select **Bing aerial imagery**.
+### Adding imagery background
+ * TODO - add instructions for adding the DRCOG imagery layer from Open Aerial Map
 
 ### Selecting a task in the Tasking Manager
 
- * Choose which area you want to work on from **[http://demo.geochasm.com/osmtm/](http://demo.geochasm.com/osmtm/)** and click **Start Mapping**.
+ * Choose which area you want to work on from **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)** and click **Start Mapping**.
  * Download current data in OSM by clicking **Edit in JOSM**.
  
 ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/osmtm_proj_pg.PNG)
  
  * This will load the existing data from OpenStreetMap (`Data Layer 1`) and another background layer for the boundaries of the task (`Tasking Manager - #2`).  You will work only within the task boundary.
  
- * Get the `.osm` file you will import by clicking the link in the **Extra Instructions**.  This will download a new layer in JOSM.
+ * Get the `.osm` file you will import by clicking the link in the **Extra Instructions**.  This will download an OSM data file for the task in your browser's 'Downloads' directory.
    At least two layers should be in JOSM: one with the imported data (`buildings-addresses####.osm`), one with current OSM data (`Data Layer 1`).
 
  ![download_import](https://cloud.githubusercontent.com/assets/353700/14101326/6f64d14e-f5b1-11e5-9748-8c56995a256d.gif)
