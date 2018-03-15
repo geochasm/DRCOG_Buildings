@@ -17,24 +17,25 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ### Check out a task on the tasking manager
 
- * Tasks will be available on **[http://tasking-manager.mapsarecool.com/](http://tasking-manager.mapsarecool.com/)**.
+ * Tasks will be available on **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)**.
  * Priority: Pending review of import tasks by DRCOG import team.
 
 ## Import workflow
 
 ### Adding imagery background
- * TODO - add instructions for adding the DRCOG imagery layer from Open Aerial Map
+ * ### TODO - add instructions for adding the DRCOG imagery layer from Open Aerial Map
 
 ### Selecting a task in the Tasking Manager
 
  * Choose which area you want to work on from **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)** and click **Start Mapping**.
- * Download current data in OSM by clicking **Edit in JOSM**.
+ 
  
 ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/osmtm_proj_pg.PNG)
  
- * This will load the existing data from OpenStreetMap (`Data Layer 1`) and another background layer for the boundaries of the task (`Tasking Manager - #2`).  You will work only within the task boundary.
+ * From the task screen you can download a .gpx file that can be loaded into JOSM 
  
  * Get the `.osm` file you will import by clicking the link in the **Extra Instructions**.  This will download an OSM data file for the task in your browser's 'Downloads' directory.
+ Open this .osm data file in JOSM
    At least two layers should be in JOSM: one with the imported data (`buildings-addresses####.osm`), one with current OSM data (`Data Layer 1`).
 
  ![download_import](https://cloud.githubusercontent.com/assets/353700/14101326/6f64d14e-f5b1-11e5-9748-8c56995a256d.gif)
