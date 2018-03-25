@@ -96,7 +96,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 If you see an Authorization window asking you to log in to OpenStreetMap, log in and remember to use your `_import` username.
 
-* Go back to the Tasking Manager and click **Mark task as done**.  Another mapper will validate your edits.
+* Go back to the Tasking Manager and click **Mark task as done**. If necessary, leave a comment so if another mapper validates your edits they are aware (i.e. one building from satellite imagery not in import data; left alone).
 
 ## What to watch out for
 
@@ -143,8 +143,8 @@ If it's larger, like a strip mall split into pieces, then do:
 ### How to ask for help
 
  * Create [issues](http://github.com/osmlab/labuildings/issues) on this github repo.
- * Ask questions on the [gitter channel](http://gitter.im/osmlab/labuildings).
- * Contact [DRCOG](https://twitter.com/DRCOGorg) [@russelldeffner](http://twitter.com/russelldeffner).
+ * Ask questions on the OSM #Colorado [Slack Channel](https://osmus-slack.herokuapp.com/).
+ * Contact [DRCOG](https://drcog.org/) or [OSM-Colorado](https://www.meetup.com/OSM-Colorado/).
 
 ### How to share your progress
 
@@ -153,7 +153,7 @@ If it's larger, like a strip mall split into pieces, then do:
 ### How to communicate with other mappers
 
  * JOSM [GeoChat](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/GeoChat) feature.
- * OSM #Colorado [Slack Channel](https://osmus-slack.herokuapp.com/).
+ * Come to one of the next OSM related [meetup groups](https://www.meetup.com/OSM-Colorado/pages/24662291/Colorado_Groups/) in Colorado.
  * Befriend other mappers on openstreetmap.org
  
 ### Thanks to the LA Buildings Import
