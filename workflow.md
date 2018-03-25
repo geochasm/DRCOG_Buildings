@@ -54,20 +54,21 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * Review both data layers for possible conflicts.
  * Examine tags in both data sets to see if there are any conflicts.
  * If there are any problems you don't know how to deal with, do not proceed. Instead, flag the `.osm` file for a more advanced user to look at. 
- (Use github [issues](http://github.com/osmlab/labuildings/issues) to flag concerns, and/or create 
- [OSM notes](http://wiki.openstreetmap.org/wiki/Notes)). Then unlock your task on the tasking manager and pick a new area to work on.
+ (Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns). Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
 
 * Preserve the work of previous mappers wherever possible.  If existing buildings in OSM are of higher quality:
   * Copy the tags from the import layer version.
-  * Delete the building from the import layer.
   * Switch to the OSM layer.
   * Select the building, paste the tags.
+  * Delete the building from the import layer.
 
-* If the imported data are of higher quality, select both buildings and use the **Replace geometry** tool; delete the building from the import layer. 
+* If the imported data are of higher quality:
+  * Delect both buildings and use the **Replace geometry** tool
+  * Delete the building from the import layer. 
  
  ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif) 
 
- * Once only those DRCOG buildings that need to be added are left in the import layer; merge the import layer into the OSM Data Layer. 
+ * Once you have only those DRCOG buildings that need to be added to OSM left in the import layer; merge the import layer into the OSM Data Layer. 
 
 ![screen shot 2016-04-02 at 3 51 03 pm](https://cloud.githubusercontent.com/assets/3673236/14229615/ad4ea4ec-f8ec-11e5-8186-1980d0090ed9.png)
 * Right-click the layers and click Merge.
@@ -128,14 +129,14 @@ If it's larger, like a strip mall split into pieces, then do:
  
 ### How to ground-truth the data
  * Up-to-date aerial imagery... try several sources.
- * See if the street is on [Mapillary](http://www.mapillary.com/map/search/33.7585334163995/34.026616549869615/-118.72937986848933/-117.82764503425584).
+ * See if the street is on [Mapillary](http://www.mapillary.com/map/search).
  * Go out and check it out yourself! Take a field trip!
  * **DO NOT USE GOOGLE MAPS OR GOOGLE STREET VIEW**.
 
 ### Identifying new buildings with imported and existing data
-* The imagery from Bing was mostly from Los Angeles Region Image Acquisition Consortium (LARIAC).  This is the same imagery used as a reference for tracing the imported data.   In some areas, the imagery is more updated than the imported data and we can use it to identify newer buildings not found in the imported and existing data.
+* The imagery was purchased by DRCOG. This is the same imagery used as a reference for tracing the imported data. In some areas, the default imagery sources are more updated than the imported data and we can use it to identify newer buildings not found in the imported and/or existing data.
 * Newer building should be identified and flagged. Tag the building with `fixme` and add a note: `Appears in satelite imagery.`
-![screen shot 2016-04-02 at 3 19 31 pm](https://cloud.githubusercontent.com/assets/3673236/14229396/ab9f392c-f8e7-11e5-80ca-635b97332bd8.png)
+![screen shot 2016-04-02 at 3 19 31 pm](https://cloud.githubusercontent.com/assets/3673236/14229396/ab9f392c-f8e7-11e5-80ca-635b97332bd8.png) We can verify this with more recent planimetric data.
 * Likewise, buildings maybe demolished and does not exist anymore, delete them.
  
 ## Communicate communicate communicate!
@@ -144,16 +145,16 @@ If it's larger, like a strip mall split into pieces, then do:
 
  * Create [issues](http://github.com/osmlab/labuildings/issues) on this github repo.
  * Ask questions on the [gitter channel](http://gitter.im/osmlab/labuildings).
- * Contact [@mappingmashups](http://twitter.com/mappingmashups), [@theworksla](https://twitter.com/theworksla),  [@gaufre](https://twitter.com/gaufre),  [@maningsambale](http://twitter.com/maningsambale).
+ * Contact [DRCOG](https://twitter.com/DRCOGorg) [@russelldeffner](http://twitter.com/russelldeffner).
 
 ### How to share your progress
 
- * Make sure you close your task on the tasking manager.
+ * Make sure you upload your changes with the recommended comment and mark your task on the tasking manager as complete. Leave a comment there as well if it would be helpful (i.e. a few buildings were difficult to tell which dataset was more accurate, etc.).
 
 ### How to communicate with other mappers
 
  * JOSM [GeoChat](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/GeoChat) feature.
- * Twitter hashtag `#labuildings`.
+ * OSM #Colorado [Slack Channel](https://osmus-slack.herokuapp.com/).
  * Befriend other mappers on openstreetmap.org
  
 ### Thanks to the LA Buildings Import
