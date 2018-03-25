@@ -63,7 +63,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
   * Delete the building from the import layer.
 
 * If the imported data are of higher quality:
-  * Delect both buildings and use the **Replace geometry** tool
+  * Select both buildings and use the **Replace geometry** tool
   * Delete the building from the import layer. 
  
  ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif) 
