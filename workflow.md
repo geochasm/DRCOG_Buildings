@@ -70,7 +70,6 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
  * Once you have only those DRCOG buildings that need to be added to OSM left in the import layer; merge the import layer into the OSM Data Layer. 
 
-![screen shot 2016-04-02 at 3 51 03 pm](https://cloud.githubusercontent.com/assets/3673236/14229615/ad4ea4ec-f8ec-11e5-8186-1980d0090ed9.png)
 * Right-click the layers and click Merge.
  ![screen shot 2016-04-02 at 3 51 12 pm](https://cloud.githubusercontent.com/assets/3673236/14229616/ad4ebafe-f8ec-11e5-9ae0-444dcf540264.png)
 * Merge onto the `osm data` layer.
