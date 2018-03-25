@@ -22,17 +22,15 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ## Import workflow
 
-### Adding imagery background
- * ### TODO - add instructions for adding the DRCOG imagery layer from Open Aerial Map
-
 ### Selecting a task in the Tasking Manager
 
  * Choose which area you want to work on from **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)** and click **Start Mapping**.
  
- 
 ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/osmtm_proj_pg.PNG)
  
  * From the task screen you can download a .gpx file that can be loaded into JOSM 
+ 
+ * Adding Imagery: ### TODO - add instructions for adding the DRCOG imagery layer from Open Aerial Map
  
  * Get the `.osm` file you will import by clicking the link in the **Extra Instructions**.  This will download an OSM data file for the task in your browser's 'Downloads' directory.
  Open this .osm data file in JOSM
