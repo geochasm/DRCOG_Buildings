@@ -36,9 +36,16 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
    * The OpenStreetMap data layer: this is the layer you will need to compare with and merge DRCOG data into. If the data layer does not automatically download, or you want to bring in a bit more buffer around your task use the manual download function in JOSM.
    * The OSM Changeset Comment: You won't notice this until you go to Save/Upload the data to OpenStreetMap. However, make sure your changeset/save comment has some text in this format: "DRCOG Planimetrics Import #DRCOGPlanimetrics #[City or County][Feature] https://wiki.openstreetmap.org/wiki/Denver_Planimetrics_Import" so we can track progress and reach out if something goes wrong. Not the Tasking Manager comment, but in JOSM when you save.
  
+### Getting the DRCOG Building Data for your Task
+
  * Get the `.osm` file you will import by clicking the link in the **Extra Instructions**.  This will download an OSM data file for the task in your browser's 'Downloads' directory.
  Open this .osm data file in JOSM
-   At least two layers should be in JOSM: one with the imported data (`buildings-addresses####.osm`), one with current OSM data (`Data Layer 1`).
+ 
+ * At this point at least three (maybe 4) layers should be in JOSM:
+   * one with the imported data (`buildings-addresses####.osm`)
+   * one with current OSM data (`Data Layer 1`)
+   * you hopefully also have the imagery and (optional) task boundary 
+   * if you are missing any of these layers, please go back a step
 
  ![download_import](https://cloud.githubusercontent.com/assets/353700/14101326/6f64d14e-f5b1-11e5-9748-8c56995a256d.gif)
 
