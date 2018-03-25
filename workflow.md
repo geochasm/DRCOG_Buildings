@@ -63,34 +63,35 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
   * Switch to the OSM layer.
   * Select the building, paste the tags.
 
-* If the imported data are of higher quality, select both buildings and use the **Replace geometry** tool. 
+* If the imported data are of higher quality, select both buildings and use the **Replace geometry** tool; delete the building from the import layer. 
  
  ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif) 
 
- *  Run JOSM Validator, and if there are errors, fix them. 
+ * Once only those DRCOG buildings that need to be added are left in the import layer; merge the import layer into the OSM Data Layer. 
+
+![screen shot 2016-04-02 at 3 51 03 pm](https://cloud.githubusercontent.com/assets/3673236/14229615/ad4ea4ec-f8ec-11e5-8186-1980d0090ed9.png)
+* Right-click the layers and click Merge.
+ ![screen shot 2016-04-02 at 3 51 12 pm](https://cloud.githubusercontent.com/assets/3673236/14229616/ad4ebafe-f8ec-11e5-9ae0-444dcf540264.png)
+* Merge onto the `osm data` layer.
+
+ * Run JOSM Validator, and if there are errors, fix them. 
 
 ![validator](https://cloud.githubusercontent.com/assets/353700/12942520/ddc572f4-d001-11e5-8cf6-399511cd47fa.gif) 
 
 ### Finally, upload it
 
-* Select both layers by shift-clicking them both.
-
-![screen shot 2016-04-02 at 3 51 03 pm](https://cloud.githubusercontent.com/assets/3673236/14229615/ad4ea4ec-f8ec-11e5-8186-1980d0090ed9.png)
-* Right-click the layers and click Merge.
-
-![screen shot 2016-04-02 at 3 51 12 pm](https://cloud.githubusercontent.com/assets/3673236/14229616/ad4ebafe-f8ec-11e5-9ae0-444dcf540264.png)
-* Merge onto the `buildings-...osm` layer.
+* Select the OSM Data Layer.
 
 ![screen shot 2016-04-02 at 3 51 21 pm](https://cloud.githubusercontent.com/assets/3673236/14229618/ad65cf96-f8ec-11e5-8d72-a6b661adedbd.png) 
 * Click the Upload button, the green up arrow button.
 
 ![screen shot 2016-04-02 at 3 53 02 pm](https://cloud.githubusercontent.com/assets/3673236/14229617/ad64e298-f8ec-11e5-9693-ba3f3a0e2085.png)
-* If you see a "Suspicious data found" warning, click "Continue upload"
+* If you see a "Suspicious data found" warning, double check that none need to be addressed, then click "Continue upload"
 
 ![screen shot 2016-04-02 at 3 53 11 pm](https://cloud.githubusercontent.com/assets/3673236/14229619/ad72b6c0-f8ec-11e5-97b6-66b43f1c2937.png)
 
-* Use the **changeset comment**: `LA County Building Import #labuildings https://wiki.openstreetmap.org/wiki/Los_angeles,_California/Buildings_Import ` 
- and **source**: `LA County GIS, http://egis3.lacounty.gov/dataportal/`.
+* As discussed above, use a **changeset comment** such as (hopefully preloaded via the tasking manager): `DRCOG Planimetrics Import #DRCOGPlanimetrics #[City or County][Feature] https://wiki.openstreetmap.org/wiki/Denver_Planimetrics_Import ` 
+ and **source**: `Denver Regional Council of Governments https://data.drcog.org/dataset/building-roofprints-2014`.
 
 ![screen shot 2016-04-02 at 3 53 17 pm](https://cloud.githubusercontent.com/assets/3673236/14229620/ad73128c-f8ec-11e5-9e2f-44d272bd6403.png)
 
