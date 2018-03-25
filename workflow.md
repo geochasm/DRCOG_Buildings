@@ -82,7 +82,6 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 * Select the OSM Data Layer.
 
-![screen shot 2016-04-02 at 3 51 21 pm](https://cloud.githubusercontent.com/assets/3673236/14229618/ad65cf96-f8ec-11e5-8d72-a6b661adedbd.png) 
 * Click the Upload button, the green up arrow button.
 
 ![screen shot 2016-04-02 at 3 53 02 pm](https://cloud.githubusercontent.com/assets/3673236/14229617/ad64e298-f8ec-11e5-9693-ba3f3a0e2085.png)
