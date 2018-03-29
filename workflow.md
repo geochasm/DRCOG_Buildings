@@ -39,7 +39,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
  * Each task has a pregenerated osm-format map data file associated with it
  * This pre-generated file contains the building shape as well as attributes about the building such as address and height
- * Your job is to review the pre-generated file in JOSM and make some adjustments prior to uploading the file to the OpenStreetMap database
+ * Your job is to review the pre-generated OSM file in JOSM and make some adjustments prior to uploading the file to the OpenStreetMap database
 
  * Get the `.osm` file you will import by clicking the link in the **Extra Instructions**.  This will download an OSM data file for the task in your browser's 'Downloads' directory.
  Open this .osm data file in JOSM
