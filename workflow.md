@@ -8,6 +8,7 @@ How to import
  * OSM best practices require that you [do not use your normal OSM account for the imports](http://wiki.openstreetmap.org/wiki/Import/Guidelines#Use_a_dedicated_user_account). Create a new account for this purpose. 
  Usually, it's your existing OSM username followed by `_imports` (e.g. `tekim_imports or tekim_drcog)`.
  Post your import account username in this [ticket](https://github.com/geochasm/DRCOG_Buildings/issues/1).
+ * **Remember** you should log into the OSM Tasking Manager (see below) with your 'imports' username but you will also need to 
 
 ### Getting familiar with JOSM
 
@@ -35,6 +36,10 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  
  
 ### Getting the DRCOG Building Data for your Task
+
+ * Each task has a pregenerated osm-format map data file associated with it
+ * This pre-generated file contains the building shape as well as attributes about the building such as address and height
+ * Your job is to review the pre-generated file in JOSM and make some adjustments prior to uploading the file to the OpenStreetMap database
 
  * Get the `.osm` file you will import by clicking the link in the **Extra Instructions**.  This will download an OSM data file for the task in your browser's 'Downloads' directory.
  Open this .osm data file in JOSM
