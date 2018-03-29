@@ -24,17 +24,13 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ### Selecting a task in the Tasking Manager
 
- * Choose which area you want to work on from **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)** Navigate to the **Contribute** tab and click **Start Mapping**.
- 
-![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/osmtm_proj_pg.PNG)
- 
- * It is recommended that you enable remote control in JOSM and use the **Edit with JOSM** button in the tasking manager.
+ * Choose which area you want to work on from **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)
 
- * This should automatically load JOSM with:
-   * The task boundary: if this doesn't load you can download the .gpx file from the task screen that can be loaded into JOSM, this is not necessary as the DRCOG building data should be trimmed to the task, but may make navigating the OSM data easier.
-   * The DRCOG imagery: please use this imagery for checking alignment of data. If the imagery does not automatically load; add *(this/tbd)* TMS link to JOSM.
-   * The OpenStreetMap data layer: this is the layer you will need to compare with and merge DRCOG data into. If the data layer does not automatically download, or you want to bring in a bit more buffer around your task use the manual download function in JOSM.
-   * The OSM Changeset Comment: You won't notice this until you go to Save/Upload the data to OpenStreetMap. However, make sure your changeset/save comment has some text in this format: "DRCOG Planimetrics Import #DRCOGPlanimetrics #[City or County][Feature] https://wiki.openstreetmap.org/wiki/Denver_Planimetrics_Import" so we can track progress and reach out if something goes wrong. Not the Tasking Manager comment, but in JOSM when you save.
+ * You will see the main project screen shown below. This example is for the Idaho Springs area pilot project
+ * Navigate to the **Contribute** tab and click **Start Mapping**.
+
+![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.PNG)
+ 
  
 ### Getting the DRCOG Building Data for your Task
 
