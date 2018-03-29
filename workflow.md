@@ -24,12 +24,14 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ### Selecting a task in the Tasking Manager
 
- * Choose which area you want to work on from **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)
+ * Go to **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)
 
  * You will see the main project screen shown below. This example is for the Idaho Springs area pilot project
- * Navigate to the **Contribute** tab and click **Start Mapping**.
+ * You can review the general instructions by clicking the **Instructions** tab
+ * If you are ready to start mapping click on the **Start contributing** button from the Instructions tab or click the **Contribute** tab.
+ * Once on the **Contribute** tab select a specific task from the map or click the **Take a task at random** button
 
-![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.PNG)
+![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.png)
  
  
 ### Getting the DRCOG Building Data for your Task
