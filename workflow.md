@@ -50,20 +50,20 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
  ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/josm_initial_download.png)
 
-* You now need to add the existing OSM data for the task area to review and compare the DRCOG data to the existing OSM data.
+* You now need to add the existing OSM data for the task area to review and compare the DRCOG buildings to the existing OSM buildings.
 
  ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/josm_download.png)
 
 * Click the "Download Map Data" button in the top left.
 
-* This opens the download dialogue that will be preset to the area you are reviewing. Leaving the defaults simply click the "Download" button at the bottom of Download view. 
+* This opens the download dialogue that will be preset to the area you are reviewing. Leaving the defaults simply click the "Download" button at the bottom of the Download view. 
 
 ### Reviewing the data before uploading
 
  * Review both data layers for possible conflicts.
  * Examine tags in both data sets to see if there are any conflicts.
  * If there are any problems you don't know how to deal with, do not proceed. Instead, flag the `.osm` file for a more advanced user to look at. 
- (Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns). Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
+ (Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns; include the task number in your issue). Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
 
 * Preserve the work of previous mappers wherever possible.  If existing buildings in OSM are of higher quality:
   * Copy the tags from the import layer version.
@@ -75,6 +75,9 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
   * Select both buildings and use the **Replace geometry** tool
   * Delete the building from the import layer. 
  
+ * Do not edit any osm nodes such as points of interest contained within the building shape
+
+
  ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif) 
 
  * Once you have only those DRCOG buildings that need to be added to OSM left in the import layer; merge the import layer into the OSM Data Layer. 
