@@ -42,13 +42,21 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * Your job is to review the pre-generated OSM file in JOSM and make some adjustments prior to uploading the file to the OpenStreetMap database
 
  * Get the `.osm` file you will review and import by clicking the link in the **Extra Instructions** section on the "Task #" task details view.  This will download a pregenerated OSM data file for the task in your browser's 'Downloads' directory.
- * You can ignore the Tip about downloading the .gpx file in order to see the current task boundary. The pregenerated OSM data file for the task will only contain buildings withing the task boundary
+ * You can ignore the Tip about downloading the .gpx file in order to see the current task boundary. The pregenerated OSM data file for the task will only contain buildings within the task boundary
  * Open JSOM and then open this .osm data file in JOSM; depending on your JOSM install method you may simply be able to click on the JOSM file in your Downloads directory
+ * **CAUTION** If you have worked on multiple tasks for this project you may have multiple .osm files in your 'Downloads' directory; be sure to open the correct file for your current task
 
  * Once you have opened the .osm file you should see something like the below image; this is for the the task #16 from the Idaho Springs pilot project
 
  ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/josm_initial_download.png)
 
+* You now need to add the existing OSM data for the task area to review and compare the DRCOG data to the existing OSM data.
+
+ ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/josm_download.png)
+
+* Click the "Download Map Data" button in the top left.
+
+* This opens the download dialogue that will be preset to the area you are reviewing. Leaving the defaults simply click the "Download" button at the bottom of Download view. 
 
 ### Reviewing the data before uploading
 
