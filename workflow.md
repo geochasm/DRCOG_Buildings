@@ -30,7 +30,8 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * You will see the main project screen shown below. This example is for the Idaho Springs area pilot project
  * You can review the general instructions by clicking the **Instructions** tab
  * If you are ready to start mapping click on the **Start contributing** button from the Instructions tab or click the **Contribute** tab.
- * On the **Contribute** tab select a specific task from the map or click the **Take a task at random** button
+ * On the **Contribute** tab select a specific task from the map or click the **Take a task at random** button or click a task on the mapview.
+ * Choose Edit with JOSM
 
 ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.png)
  
@@ -43,7 +44,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
  * Get the `.osm` file you will review and import by clicking the link in the **Extra Instructions** section on the "Task #" task details view.  This will download a pregenerated OSM data file for the task in your browser's 'Downloads' directory.
  * You can ignore the Tip about downloading the .gpx file in order to see the current task boundary. The pregenerated OSM data file for the task will only contain buildings within the task boundary
- * Open JSOM and then open this .osm data file in JOSM; depending on your JOSM install method you may simply be able to click on the JOSM file in your Downloads directory
+ * Open this .osm data file in JOSM; depending on your JOSM install method you may simply be able to click on the JOSM file in your Downloads directory
  * **CAUTION** If you have worked on multiple tasks for this project you may have multiple .osm files in your 'Downloads' directory; be sure to open the correct file for your current task
 
  * Once you have opened the .osm file you should see something like the below image; this is for the the task #16 from the Idaho Springs pilot project
