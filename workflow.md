@@ -18,7 +18,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ### Check out a task on the tasking manager
 
- * Tasks will be available on **[http://tasking-manager.mapsarecool.com/project/2](http://tasking-manager.mapsarecool.com/project/2)**.
+ * Tasks will be available on **[http://tasking-manager.mapsarecool.com](http://tasking-manager.mapsarecool.com)**.
  * Priority: Pending review of import tasks by DRCOG import team.
 
 ## Import workflow
