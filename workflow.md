@@ -30,11 +30,10 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * You will see the main project screen shown below. This example is for the Idaho Springs area pilot project
  * You can review the general instructions by clicking the **Instructions** tab
  * If you are ready to start mapping click on the **Start contributing** button from the Instructions tab or click the **Contribute** tab.
+ ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.png)
  * On the **Contribute** tab select a specific task from the map or click the **Take a task at random** button or click a task on the mapview.
- * Choose Edit with JOSM
-
-![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.png)
- 
+ * Make sure your JOSM is running and Remote Control Enable and Choose **Edit with JOSM**
+ * This will populate your JOSM with the OSM data in your task area.
  
 ### Getting the DRCOG Building Data for your Task
 
