@@ -31,9 +31,11 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * You can review the general instructions by clicking the **Instructions** tab
  * If you are ready to start mapping click on the **Start contributing** button from the Instructions tab or click the **Contribute** tab.
  ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.png)
+ 
  * On the **Contribute** tab select a specific task from the map or click the **Take a task at random** button or click a task on the mapview.
- * Make sure your JOSM is running and Remote Control Enable and Choose **Edit with JOSM**
+ * Make sure your JOSM is running with Remote Control Enabled, and Choose **Edit with JOSM**
  ![task_lock](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/TaskLock.PNG)
+ 
  * This will populate your JOSM with the OSM data in your task area.
  
 ### Getting the DRCOG Building Data for your Task
@@ -41,23 +43,18 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * Each task has a pregenerated osm-format map data file associated with it
  * This pregenerated file contains the building shapes as well as attributes about each building such as address and height
  * Your job is to review the pre-generated OSM file in JOSM and make some adjustments prior to uploading the file to the OpenStreetMap database
+![data_save](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/SaveData.PNG)
 
- * Get the `.osm` file you will review and import by clicking the link in the **Extra Instructions** section on the "Task #" task details view.  This will download a pregenerated OSM data file for the task in your browser's 'Downloads' directory.
+ * You can just open, but we suggest saving, the DRCOG `.osm` file by clicking the link in the **Extra Instructions** section shown in the image above.
  * You can ignore the Tip about downloading the .gpx file in order to see the current task boundary. The pregenerated OSM data file for the task will only contain buildings within the task boundary
- * Open this .osm data file in JOSM; depending on your JOSM install method you may simply be able to click on the JOSM file in your Downloads directory
+ * Open the DRCOG .osm data file in JOSM; depending on your JOSM install method you may simply be able to click on the JOSM file in your Downloads directory
  * **CAUTION** If you have worked on multiple tasks for this project you may have multiple .osm files in your 'Downloads' directory; be sure to open the correct file for your current task
 
- * Once you have opened the .osm file you should see something like the below image; this is for the the task #16 from the Idaho Springs pilot project
-
- ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/josm_initial_download.png)
-
-* You now need to add the existing OSM data for the task area to review and compare the DRCOG buildings to the existing OSM buildings.
-
- ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/josm_download.png)
-
-* Click the "Download Map Data" button in the top left.
-
-* This opens the download dialogue that will be preset to the area you are reviewing. Leaving the defaults simply click the "Download" button at the bottom of the Download view. 
+ * Once you have opened the .osm file you should see something like the below image; this is for the the task #11 from the Idaho Springs pilot project
+ ![download_osm](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/2DataLayers.PNG)
+ 
+* If you don't see both data sources (drcog...osm & Data Layer x), make sure your JOSM remote control is enable, restart JOSM and try again from selecting **Edit in JOSM** from the Tasking Manager. 
+* You may also have an imagery layer as some projects we may have a preferred imagery to use for comparison.
 
 ### Reviewing the data before uploading
 
