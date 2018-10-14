@@ -33,6 +33,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  ![download_osm](https://github.com/geochasm/DRCOG_Buildings/blob/master/images/proj_descr_screen.png)
  * On the **Contribute** tab select a specific task from the map or click the **Take a task at random** button or click a task on the mapview.
  * Make sure your JOSM is running and Remote Control Enable and Choose **Edit with JOSM**
+ ![task_lock](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/TaskLock.PNG)
  * This will populate your JOSM with the OSM data in your task area.
  
 ### Getting the DRCOG Building Data for your Task
