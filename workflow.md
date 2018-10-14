@@ -80,9 +80,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 * If there are any problems you don't know how to deal with, do not proceed. Instead, flag the `.osm` file for a more advanced user to look at. 
  (Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns; include the task number in your issue). Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
 
-
-
- * Once you have merged the DRCOG buildings that need to be added to OSM and copied tags or replaced geometry to existing OSM  data; you can prepare to upload.
+ * Once you have merged the DRCOG buildings that need to be added to OSM and copied tags or replaced geometry to existing OSM  data; you can prepare to upload. If following the workflow you should know your area is finished when you've deleted (merged) all the data from the DRCOG dataset.
 
 * Before uploading though, do one more check - Run JOSM Validator, and if there are errors, fix them. 
 ![validator](https://cloud.githubusercontent.com/assets/353700/12942520/ddc572f4-d001-11e5-8cf6-399511cd47fa.gif) 
@@ -135,9 +133,10 @@ If it's larger, like a strip mall split into pieces, then do:
  * Look for any overlaps with existing buildings. Existing buildings in OSM are probably _more_ up-to-date than our imported data. Do not assume the imported data is better, mostly likely it is worse! 
  * Carefully combine the import data with the existing OSM data. If you aren't sure about some tags, ask someone! Especially ask the original mapper! 
  
-### How to ground-truth the data
- * Up-to-date aerial imagery... try several sources.
- * See if the street is on [Mapillary](http://www.mapillary.com/map/search).
+### How to validate the data
+ * We are working to get more up-to-date aerial imagery... for now, try several of the default sources.
+ * See if the street is on Mapillary or OpenStreetCam; there's JOSM plugins for that!
+ * Contact mappers that have added information like POIs in the area - maybe they know or can look?
  * Go out and check it out yourself! Take a field trip!
  * **DO NOT USE GOOGLE MAPS OR GOOGLE STREET VIEW**.
 
@@ -151,7 +150,8 @@ If it's larger, like a strip mall split into pieces, then do:
 
 ### How to ask for help
 
- * Create [issues](http://github.com/osmlab/labuildings/issues) on this github repo.
+ * Search the Training Material in the [DRCOG Import Drive](https://drive.google.com/open?id=1QsBDjI15l68WhTTRg8r-RWoY5biUiPfb)
+ * Create [issues](https://github.com/geochasm/DRCOG_Buildings/issues) on this github repo.
  * Ask questions on the OSM #Colorado [Slack Channel](https://osmus-slack.herokuapp.com/).
  * Contact [DRCOG](https://drcog.org/) or [OSM-Colorado](https://www.meetup.com/OSM-Colorado/).
 
