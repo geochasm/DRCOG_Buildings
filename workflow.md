@@ -65,15 +65,16 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  
  * Now switch to the OSM Data Layer, there will be 3 scenarios:
   * 1) If there is no existing OSM data, examine tags to make sure there are no obvious mistakes like incomplete addresses, impossible heights, building type make sense for the area/imagery.
- * If there is an existing building in OSM then you must decide how to conflate the two:
+    * Then delete the building from the DRCOG layer (i.e. once it's merged into your OSM layer, it can safely be deleted from the import layer and once all buildings are gone from the import layer, you're done).
+ * If there is an existing building in OSM then you must decide how to conflate the two datasets:
  *(**NOTE:** Preserve the work of previous mappers wherever possible.)*
   * 2) If existing buildings in OSM are of higher quality:
     * Copy the tags from the imported building as necessary.
-    * Delete the imported building from both layers.
+    * Delete the imported building from both layers (i.e we're only saving tags from DRCOG).
   * 3) If the imported data are of higher quality:
     * Select both buildings and use the **Replace geometry** tool (CTRL+SHIFT+G) under Additional Tools menu.
     * Conflate the tagging by selecting which to use if there are conflicts (example: building type).
-    * Delete the building from the import layer. 
+    * Delete the building from the import layer (the original and DRCOG should now be one geometry on your OSM Layer). 
 ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif)
 
 * Do not worry about editing any osm nodes such as points of interest contained within the building shape.
