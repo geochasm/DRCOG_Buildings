@@ -53,8 +53,8 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  * Once you have opened the .osm file you should see something like the below image; this is for the the task #11 from the Idaho Springs pilot project
  ![download_osm](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/2DataLayers.PNG)
  
-* If you don't see both data sources (drcog...osm & Data Layer x), make sure your JOSM remote control is enable, restart JOSM and try again from selecting **Edit in JOSM** from the Tasking Manager. 
-* You may also have an imagery layer as some projects we may have a preferred imagery to use for comparison. If not, bring in Bing and any others you prefer; most likely existing data will be mapped/aligned to Bing. Ideally align to GPS traces; where there is question, align imagery and DRCOG data to existing mapping or Bing where there is little to no existing data.
+* If you don't see both data sources (drcog...osm & Data Layer x), make sure your JOSM remote control is enabled, restart JOSM and try again from the selecting **Edit in JOSM** from the Tasking Manager step above. 
+* You may also have an imagery layer as some projects may have a preferred imagery to use for comparison that will automatically load. If not, bring in Bing and any others you prefer; most likely existing data will be mapped/aligned to Bing. Ideally align to available GPS traces; where there is none or still is questionable, align imagery and DRCOG data to existing mapping or Bing where there is little to no existing data.
 
 ### Reviewing the data before uploading
 
