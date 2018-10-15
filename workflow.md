@@ -54,12 +54,12 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  ![download_osm](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/2DataLayers.PNG)
  
 * If you don't see both data sources (drcog...osm & Data Layer x), make sure your JOSM remote control is enable, restart JOSM and try again from selecting **Edit in JOSM** from the Tasking Manager. 
-* You may also have an imagery layer as some projects we may have a preferred imagery to use for comparison.
+* You may also have an imagery layer as some projects we may have a preferred imagery to use for comparison. If not, bring in Bing and any others you prefer; most likely existing data will be mapped/aligned to Bing. Ideally align to GPS traces; where there is question, align imagery and DRCOG data to existing mapping or Bing where there is little to no existing data.
 
 ### Reviewing the data before uploading
 
  * The overall workflow is to "merge" the DRCOG data into your OSM Data Layer, while reviewing both data layers for possible conflicts.
- * Make sure you have the DRCOG dataset active, select a building and use **Merge selection** under the Edit menu (CTRL+SHIFT+M)
+ * Make sure you have the DRCOG dataset active, select a building and use **Merge selection** under the Edit menu (CTRL+SHIFT+M).
  * Merge the building into the OSM Data Layer as shown in image below.
  ![Merge_Building](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/merge.PNG)
  
@@ -71,14 +71,15 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
     * Copy the tags from the imported building as necessary.
     * Delete the imported building from both layers.
   * 3) If the imported data are of higher quality:
-    * Select both buildings and use the **Replace geometry** tool
-    * Conflate the tagging by selecting which to use if there are conflicts (example: building type)
+    * Select both buildings and use the **Replace geometry** tool (CTRL+SHIFT+G) under Additional Tools menu.
+    * Conflate the tagging by selecting which to use if there are conflicts (example: building type).
     * Delete the building from the import layer. 
 ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif)
 
-* Do not worry about editing any osm nodes such as points of interest contained within the building shape
+* Do not worry about editing any osm nodes such as points of interest contained within the building shape.
 * If there are any problems you don't know how to deal with, do not proceed. Instead, flag the `.osm` file for a more advanced user to look at. 
- (Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns; include the task number in your issue). Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
+  * (Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns; include the task number in your issue).
+  * Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
 
  * Once you have merged the DRCOG buildings that need to be added to OSM and copied tags or replaced geometry to existing OSM  data; you can prepare to upload. If following the workflow you should know your area is finished when you've deleted (merged) all the data from the DRCOG dataset.
 
@@ -90,18 +91,16 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 * Select the OSM Data Layer.
 
 * Click the Upload button, the green up arrow button.
-
 ![screen shot 2016-04-02 at 3 53 02 pm](https://cloud.githubusercontent.com/assets/3673236/14229617/ad64e298-f8ec-11e5-9693-ba3f3a0e2085.png)
-* If you see a "Suspicious data found" warning, double check that none need to be addressed, then click "Continue upload"
 
+* If you see a "Suspicious data found" warning, double check that none need to be addressed, then click "Continue upload".
 ![screen shot 2016-04-02 at 3 53 11 pm](https://cloud.githubusercontent.com/assets/3673236/14229619/ad72b6c0-f8ec-11e5-97b6-66b43f1c2937.png)
 
 * As discussed above, use a **changeset comment** such as (hopefully preloaded via the tasking manager): `DRCOG Planimetrics Import #DRCOGPlanimetrics #[City or County][Feature] https://wiki.openstreetmap.org/wiki/Denver_Planimetrics_Import ` 
  and **source**: `Denver Regional Council of Governments https://data.drcog.org/dataset/building-roofprints-2014`.
-
 ![screen shot 2016-04-02 at 3 53 17 pm](https://cloud.githubusercontent.com/assets/3673236/14229620/ad73128c-f8ec-11e5-9e2f-44d272bd6403.png)
 
-If you see an Authorization window asking you to log in to OpenStreetMap, log in and remember to use your `_import` username.
+* If you see an Authorization window asking you to log in to OpenStreetMap, log in and remember to use your `_import` username.
 
 * Go back to the Tasking Manager and click **Mark task as done**. If necessary, leave a comment so if another mapper validates your edits they are aware (i.e. one building from satellite imagery not in import data; left alone).
 
@@ -111,20 +110,14 @@ If you see an Authorization window asking you to log in to OpenStreetMap, log in
 
  * Run the [JOSM validator](http://wiki.openstreetmap.org/wiki/JOSM/Validator). Check for any errors it detects.
  * Check for small building parts that should be joined to the main building. We've already found a few examples of these in the data (see [issue #19](https://github.com/osmlab/labuildings/issues/19)), so make sure you keep an eye out for these.  To join small parts, select both polygons and select **Tools > Join overlapping Area**.
- 
  ![screen shot 2016-04-04 at 2 38 36 pm](https://cloud.githubusercontent.com/assets/695934/14264162/74ab59f4-fa73-11e5-8c4e-896c7fa2c2e4.png)
 
-If it's a small sliver, it makes sense that the "proper" data is on the larger object. Delete all the tags on the sliver and join the two objects.
-
-If it's larger, like a strip mall split into pieces, then do:
-
-- `lacounty:ain` -> ALL
-- `lacount:bld_id` -> ALL
-- `start_date` -> None if multiple or the one option if there's only one
-- `height` -> largest number
-- `ele` -> largest number 
-- `building:units` -> none if different
-
+ * If it's a small sliver, it makes sense that the "proper" data is on the larger object. Delete all the tags on the sliver and join the two objects.
+ * If it's larger, like a strip mall split into pieces, then do:
+   * `start_date` -> None if multiple or the one option if there's only one
+   * `height` -> largest number
+   * `ele` -> largest number 
+   * `building:units` -> none if different
 ![screen shot 2016-04-04 at 2 38 44 pm](https://cloud.githubusercontent.com/assets/695934/14264157/6c9f23ee-fa73-11e5-8744-e49d7e179003.png)
 
  * Inspect everything else with a critical eye! Don't trust that the validator or FIXME tags will catch everything. There may be other bugs that only you can detect. Use your human smarts!
@@ -150,7 +143,7 @@ If it's larger, like a strip mall split into pieces, then do:
 
 ### How to ask for help
 
- * Search the Training Material in the [DRCOG Import Drive](https://drive.google.com/open?id=1QsBDjI15l68WhTTRg8r-RWoY5biUiPfb)
+ * Search the Training Material in the [DRCOG Import Drive](https://drive.google.com/open?id=1QsBDjI15l68WhTTRg8r-RWoY5biUiPfb).
  * Create [issues](https://github.com/geochasm/DRCOG_Buildings/issues) on this github repo.
  * Ask questions on the OSM #Colorado [Slack Channel](https://osmus-slack.herokuapp.com/).
  * Contact [DRCOG](https://drcog.org/) or [OSM-Colorado](https://www.meetup.com/OSM-Colorado/).
@@ -163,8 +156,7 @@ If it's larger, like a strip mall split into pieces, then do:
 
  * JOSM [GeoChat](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/GeoChat) feature.
  * Come to one of the next OSM related [meetup groups](https://www.meetup.com/OSM-Colorado/pages/24662291/Colorado_Groups/) in Colorado.
- * Befriend other mappers on openstreetmap.org
+ * Befriend other mappers on openstreetmap.org!
  
 ### Thanks to the LA Buildings Import
-* This import workflow guide is based on the guide published by the Los Angeles building import at **[https://github.com/osmlab/labuildings/blob/master/IMPORTING.md](https://github.com/osmlab/labuildings/blob/master/IMPORTING.md)**.
- 
+* This import workflow guide is based on the guide published by the Los Angeles building import at **[https://github.com/osmlab/labuildings/blob/master/IMPORTING.md](https://github.com/osmlab/labuildings/blob/master/IMPORTING.md)**. 
