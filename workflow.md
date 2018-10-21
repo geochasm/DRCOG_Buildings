@@ -83,8 +83,10 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
   * Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
 
  * Once you have merged the DRCOG buildings that need to be added to OSM and copied tags or replaced geometry to existing OSM  data; you can prepare to upload. If following the workflow you should know your area is finished when you've deleted (merged) all the data from the DRCOG dataset.
+ 
+ * Delete the DRCOG dataset (layer) from JOSM: right-click the "drcog...osm" layer from the layers menu and select **Delete** - if you get a warning, make sure you did not miss any buildings (i.e. this layer should be completely empty if you have followed the workflow).
 
-* Before uploading though, do one more check - Run JOSM Validator, and if there are errors, fix them. 
+* Now before uploading your OSM Data Layer, do one more check - Run JOSM Validator, and if there are errors, fix them. 
 ![validator](https://cloud.githubusercontent.com/assets/353700/12942520/ddc572f4-d001-11e5-8cf6-399511cd47fa.gif) 
 
 ### Finally, upload it
