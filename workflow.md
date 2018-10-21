@@ -8,7 +8,7 @@ How to import
  * OSM best practices require that you [do not use your normal OSM account for the imports](http://wiki.openstreetmap.org/wiki/Import/Guidelines#Use_a_dedicated_user_account). Create a new account for this purpose. 
  Usually, it's your existing OSM username followed by `_imports` (e.g. `tekim_imports or tekim_drcog)`.
  Post your import account username in this [ticket](https://github.com/geochasm/DRCOG_Buildings/issues/1).
- * **Remember** you should log into the OSM Tasking Manager (see below) with your 'imports' username but you will also need to use that same username from any data uploade from JOSM
+ * **Remember** you should log into the OSM Tasking Manager (see below) with your 'imports' username but you will also need to use that same username from any data upload from JOSM
 
 ### Getting familiar with JOSM
 
