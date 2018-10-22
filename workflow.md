@@ -25,7 +25,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 
 ### Selecting a task in the Tasking Manager
 
- * Go to [http://tasking-manager.mapsarecool.com](http://tasking-manager.mapsarecool.com)
+ * Go to [http://tasking-manager.mapsarecool.com](http://tasking-manager.mapsarecool.com) - Select a project, typically the one on top/highest priority unless told otherwise (i.e. at an importathon).
 
  * You will see the main project screen shown below. This example is for the Idaho Springs area pilot project
  * You can review the general instructions by clicking the **Instructions** tab
