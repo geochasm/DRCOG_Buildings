@@ -147,7 +147,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 ### How to ask for help
 
  * Search the Training Material in the [DRCOG Import Drive](https://drive.google.com/open?id=1QsBDjI15l68WhTTRg8r-RWoY5biUiPfb).
- * Look on the [wiki](https://github.com/jenningsanderson/drcog/wiki); if you can't find an answer, create [issues](https://github.com/geochasm/DRCOG_Buildings/issues) on this github repo.
+ * Look on the [wiki](https://github.com/geochasm/DRCOG_Buildings/wiki); if you can't find an answer, create [issues](https://github.com/geochasm/DRCOG_Buildings/issues) on this github repo.
  * Or ask questions on the OSM #Colorado [Slack Channel](https://osmus-slack.herokuapp.com/).
  * Contact [DRCOG](https://drcog.org/) or [OSM-Colorado](https://www.meetup.com/OSM-Colorado/).
 
