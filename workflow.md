@@ -6,20 +6,21 @@ How to import
 ### Creating an import account
 
  * OSM best practices require that you [do not use your normal OSM account for the imports](http://wiki.openstreetmap.org/wiki/Import/Guidelines#Use_a_dedicated_user_account). Create a new account for this purpose. 
- Usually, it's your existing OSM username followed by `_imports` (e.g. `tekim_imports or tekim_drcog)`.
+ Usually, it's your existing OSM username followed by `_imports` (e.g. `tekim_imports`).
  Post your import account username in this [ticket](https://github.com/geochasm/DRCOG_Buildings/issues/1).
- * **Remember** you should log into the OSM Tasking Manager (see below) with your 'imports' username but you will also need to use that same username from any data upload from JOSM
+ * **Remember** you should log into the OSM Tasking Manager (see below) with your 'imports' username but you will also need to use that same username from any data upload from JOSM.
 
 ### Getting familiar with JOSM
 
 To contribute to this project, you need to use the JOSM editor.  Here are some resources to get you started:
  * LearnOSM - http://learnosm.org/en/josm/
  * Mapbox Mapping wiki - https://www.mapbox.com/blog/making-the-most-josm/
+ 
+### Tools for the import
 
-### Check out a task on the tasking manager
-
- * Tasks will be available on **[http://tasking-manager.mapsarecool.com](http://tasking-manager.mapsarecool.com)**.
- * Priority: Pending review of import tasks by DRCOG import team.
+* OpenStreetMap account with the `_imports` suffix.
+* Working [JOSM](https://josm.openstreetmap.de/) installation, with the [Conflation](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Conflation) plugin from Preferences > Plugins.
+* *(Optional)* Text editor with advanced find/replace functionality, such as [BBEdit](https://www.barebones.com/products/bbedit/), [Notepad++](https://notepad-plus-plus.org/), or [Atom](https://atom.io/).
 
 ## Import workflow
 
@@ -56,9 +57,18 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 * If you don't see both data sources (drcog...osm & Data Layer x), make sure your JOSM remote control is enabled, restart JOSM and try again from the selecting **Edit in JOSM** from the Tasking Manager step above. 
 * You may also have an imagery layer as some projects may have a preferred imagery to use for comparison that will automatically load. If not, bring in Bing and any others you prefer; most likely existing data will be mapped/aligned to Bing. Ideally align to available GPS traces; where there is none or still is questionable, align imagery and DRCOG data to existing mapping or Bing where there is little to no existing data.
 
+### Pre-checking the data before merging
+
+The overall workflow is to "merge" the DRCOG data into your OSM Data Layer, while reviewing both data layers for possible conflicts. Some quality checks before merging will make things easier.
+
+* With the .osm file layer activated (no other OSM data visible), run the **JOSM Validator** (SHIFT+V) to look for errors. Common errors at this stage can include multiple buildings with the same address (usually an error where a house and a garage or shed have been given the same address tags). Refer to the section below on **fixing common errors** for solutions and guidelines.
+* While still in the new .osm file layer, **Select All** (CTRL+A) to select all objects, and then **Deselect Nodes** (SHIFT+U) to select all of the buildings. In the Selection window on the right side of the screen, scroll through the list of selected buildings to look for malformed street names. Examples of bad street names include:
+ * unexpanded abbreviations (Ct instead of Court, or Ln instead of Lane)
+ * use of the directional prefix "North" (not used in City and County of Denver)
+ * occasional errors in the automatic import, such as the street name *Steele Street* being expanded to *Streeteele Street*
+
 ### Reviewing the data before uploading
 
- * The overall workflow is to "merge" the DRCOG data into your OSM Data Layer, while reviewing both data layers for possible conflicts.
  * Make sure you have the DRCOG dataset active, select a building and use **Merge selection** under the Edit menu (CTRL+SHIFT+M).
  * Merge the building into the OSM Data Layer as shown in image below.
  ![Merge_Building](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/merge.PNG)
@@ -77,16 +87,16 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
     * Delete the building from the import layer (the original and DRCOG should now be one geometry on your OSM Layer). 
 ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif)
 
-* Do not worry about editing any osm nodes such as points of interest contained within the building shape.
-* If there are any problems you don't know how to deal with, do not proceed. Instead, flag the `.osm` file for a more advanced user to look at. 
+* Do not worry about editing any other nodes such as points of interest contained within the building shape.
+* If there are any problems you don't know how to deal with, *do not proceed*. Instead, flag the task in the tasking manager for a more advanced user to look at. 
   * Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns; include the task number in your issue.
   * Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
 
- * Once you have merged the DRCOG buildings that need to be added to OSM and copied tags or replaced geometry to existing OSM  data; you can prepare to upload. If following the workflow you should know your area is finished when you've deleted (merged) all the data from the DRCOG dataset.
+ * Once you have merged the DRCOG buildings that need to be added to OSM and copied tags or replaced geometry to existing OSM data; you can prepare to upload. If following the workflow you should know your area is finished when you've deleted (merged) all the data from the DRCOG dataset.
  
  * Delete the DRCOG dataset (layer) from JOSM: right-click the "drcog...osm" layer from the layers menu and select **Delete** - if you get a warning, make sure you did not miss any buildings (i.e. this layer should be completely empty if you have followed the workflow).
 
-* Now before uploading your OSM Data Layer, do one more check - Run JOSM Validator, and if there are errors, fix them. 
+* Now before uploading your OSM Data Layer, do one more check - Run **JOSM Validator** (SHIFT+V), and if there are errors, fix them. 
 ![validator](https://cloud.githubusercontent.com/assets/353700/12942520/ddc572f4-d001-11e5-8cf6-399511cd47fa.gif) 
 
 ### Finally, upload it
