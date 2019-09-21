@@ -24,6 +24,9 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
 Before you begin, make sure your tools are setup and working:
 1. OpenStreetMap account with the `_imports` suffix.
 1. Working [JOSM](https://josm.openstreetmap.de/) installation, with the [Conflation](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Conflation) plugin installed from Preferences > Plugins.
+1. DRCOG imagery added to JOSM:
+   * Imagery > Imagery preferences - select the **+TMS** button to add a new TMS imagery source.
+   * Add the URL: tms:http://tiles.openaerialmap.org/user/5bc8ba7fa8a0140005ce649b/{z}/{x}/{y}@2x
 1. *(Optional)* Text editor with advanced find/replace functionality, such as [BBEdit](https://www.barebones.com/products/bbedit/), [Notepad++](https://notepad-plus-plus.org/), or [Atom](https://atom.io/).
 
 ## Import workflow
@@ -31,7 +34,6 @@ Before you begin, make sure your tools are setup and working:
 ### Selecting a task in the Tasking Manager
 
  * Go to [http://tasking-manager.mapsarecool.com](http://tasking-manager.mapsarecool.com) - Select a project, typically the one on top/highest priority unless told otherwise (i.e. at an importathon).
-
  * You will see the main project screen shown below. This example is for the Idaho Springs area pilot project
  * You can review the general instructions by clicking the **Instructions** tab
  * If you are ready to start mapping click on the **Start contributing** button from the Instructions tab or click the **Contribute** tab.
@@ -56,8 +58,7 @@ Before you begin, make sure your tools are setup and working:
  * You can just open, but we suggest saving, the DRCOG `.osm` file by clicking the link in the **Extra Instructions** section shown in the image above.
  * You can ignore the Tip about downloading the .gpx file in order to see the current task boundary. The pregenerated OSM data file for the task will only contain buildings within the task boundary
  * Open the DRCOG .osm data file in JOSM; depending on your JOSM install method you may simply be able to click on the JOSM file in your Downloads directory
- * **CAUTION** If you have worked on multiple tasks for this project you may have multiple .osm files in your 'Downloads' directory; be sure to open the correct file for your current task
-
+    * **CAUTION** If you have worked on multiple tasks for this project you may have multiple .osm files in your 'Downloads' directory; be sure to open the correct file for your current task
  * Once you have opened the .osm file you should see something like the below image; this is for the the task #11 from the Idaho Springs pilot project
 	
  ![download_osm](https://github.com/russdeffner/DRCOG_Buildings/blob/master/images/2DataLayers.PNG)
@@ -89,28 +90,26 @@ The overall workflow is to "merge" the DRCOG data into your OSM Data Layer, whil
  * Now switch to the OSM Data Layer (right click on "Data Layer 1" and select "Activate"), there will be 3 scenarios:
  
 1. If there is no existing OSM data for the building, examine tags to make sure there are no obvious mistakes like incomplete addresses, impossible heights, building type make sense for the area/imagery.
-   1. Then delete the building from the DRCOG layer (i.e. once it's merged into your OSM layer, it can safely be deleted from the import layer and once all buildings are gone from the import layer, you're done).
+   * Then delete the building from the DRCOG layer (i.e. once it's merged into your OSM layer, it can safely be deleted from the import layer and once all buildings are gone from the import layer, you're done).
 
 If there is an existing building in OSM then you must decide how to conflate the two datasets (**NOTE:** Preserve the work of previous mappers wherever possible).
 
 2. If existing buildings in OSM are of higher quality:
-   1. Copy the tags from the imported building as necessary.
-   1. Delete the imported building from both layers (i.e we're only saving tags from DRCOG).
+   * Copy the tags from the imported building as necessary.
+   * Delete the imported building from both layers (i.e we're only saving tags from DRCOG).
 
 3. If the imported data are of higher quality:
-    1. Select both buildings and use the **Replace geometry** tool (CTRL+SHIFT+G) under Additional Tools menu.
-    1. Conflate the tagging by selecting which to use if there are conflicts (example: building type).
-    1. Delete the building from the import layer (the original and DRCOG should now be one geometry on your OSM Layer). 
+    * Select both buildings and use the **Replace geometry** tool (CTRL+SHIFT+G) under Additional Tools menu.
+    * Conflate the tagging by selecting which to use if there are conflicts (example: building type).
+    * Delete the building from the import layer (the original and DRCOG should now be one geometry on your OSM Layer). 
 				
 ![replace](https://cloud.githubusercontent.com/assets/353700/12942518/ddba87a4-d001-11e5-9441-2561f67b45bc.gif)
 
 * Do not worry about editing any other nodes such as points of interest contained within the building shape.
 * If there are any problems you don't know how to deal with, *do not proceed*. Instead, flag the task in the tasking manager for a more advanced user to look at. 
-  * Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns; include the task number in your issue.
-  * Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
-
+   * Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns; include the task number in your issue.
+   * Then unlock your task on the tasking manager and pick a new area to work on, leaving a comment there as well so the next mapper is aware.
  * Once you have merged the DRCOG buildings that need to be added to OSM and copied tags or replaced geometry to existing OSM data; you can prepare to upload. If following the workflow you should know your area is finished when you've deleted (merged) all the data from the DRCOG dataset.
- 
  * Delete the DRCOG dataset (layer) from JOSM: right-click the "drcog...osm" layer from the layers menu and select **Delete** - if you get a warning, make sure you did not miss any buildings (i.e. this layer should be completely empty if you have followed the workflow).
 
 ### Finally, upload your data
@@ -133,7 +132,6 @@ Before uploading your OSM Data Layer, do one more check - Run **JOSM Validator**
 ![screen shot 2016-04-02 at 3 53 17 pm](https://cloud.githubusercontent.com/assets/3673236/14229620/ad73128c-f8ec-11e5-9e2f-44d272bd6403.png)
 
 * If you see an Authorization window asking you to log in to OpenStreetMap, log in and remember to use your `_imports` username.
-
 * Go back to the Tasking Manager and click **Mark task as done**. If necessary, leave a comment so if another mapper validates your edits they are aware (i.e. one building from satellite imagery not in import data; left alone).
 
 ## Fixing common problems
@@ -143,6 +141,9 @@ Before uploading your OSM Data Layer, do one more check - Run **JOSM Validator**
 Watch out for situations where something that isn't a building may have been traced as one. Do not import these "not a building" buildings. Common cases include:
 * Parked tractor trailers getting traced as sheds.
 * Boats, sandboxes or garden boxes in yards getting traced as sheds or garages.
+* Buildings that were traced during construction, and have the type `building=foundation/ruin` which is not a valid OSM building type.
+   * If the building exists in the imagery, change the building type to `building=house` or whatever building type is appropriate for the structure.
+   * Check the height tag. If you see `height=0`, then either update the height information if you can determine it through other imagery, or simply delete the `height` tag.
 
 ### Duplicate Addresses
 
@@ -204,10 +205,10 @@ Then in your text editor you could search for the text `v='Logan St'`, and repla
 ### When not to import a building
 
 1. The building already exists in OSM, well traced, with complete tags.
-   1. In this case, simply add any useful tags from the DRCOG building to the originally drawn building, and delete the building from you .osm file.
-   1. If the building exists in OSM, but the DRCOG trace is higher quality, then you can combine the buildings using the **Replace Geometry** command (CTRL+SHIFT+G). When asked to combine the tags, use the original mapper's tags whenever possible.
+   * In this case, simply add any useful tags from the DRCOG building to the originally drawn building, and delete the building from you .osm file.
+   * If the building exists in OSM, but the DRCOG trace is higher quality, then you can combine the buildings using the **Replace Geometry** command (CTRL+SHIFT+G). When asked to combine the tags, use the original mapper's tags whenever possible.
 1. The building is a 3D or multi-part building.
-   1. These are not formatted correctly in the current .osm files, and should not be imported as is. Correcting the multi-part buildings into compliant [OSM 3D buildings](https://wiki.openstreetmap.org/wiki/Simple_3D_buildings) is an advanced task outside the scope of this import (proceed with caution).
+   * These are not formatted correctly in the current .osm files, and should not be imported as is. Correcting the multi-part buildings into compliant [OSM 3D buildings](https://wiki.openstreetmap.org/wiki/Simple_3D_buildings) is an advanced task outside the scope of this import (proceed with caution).
 1. The OSM data layer includes updated information about why the building may not exist anymore, such as a `construction=residential` area indicating that the buildings may have been demolished.
 
 ### Validate the import with your eyes before uploading!
