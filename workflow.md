@@ -7,6 +7,8 @@ How to import
 
  * OSM best practices require that you [do not use your normal OSM account for the imports](http://wiki.openstreetmap.org/wiki/Import/Guidelines#Use_a_dedicated_user_account). Create a new account for this purpose. 
  Usually, it's your existing OSM username followed by `_imports` (e.g. `tekim_imports`).
+    * **Tip:** If you use GMail, you can create email aliases by adding `+osmimport` to your email address, and use this alias to sign up for the additional OSM account. This makes it easier to log into the correct account, without having to create a new email address!
+    * Example: `michael.jordan@gmail.com` can become `michael.jordan+osmimport@gmail.com` - They both refer to the same email inbox, but can be used to create unique logins.
  Post your import account username in this [ticket](https://github.com/geochasm/DRCOG_Buildings/issues/1).
  * **Remember** you should log into the OSM Tasking Manager (see below) with your 'imports' username but you will also need to use that same username from any data upload from JOSM.
 
@@ -19,6 +21,7 @@ To contribute to this project, you need to use the JOSM editor.  Here are some r
  
 ### Tools for the import
 
+Before you begin, make sure your tools are setup and working:
 1. OpenStreetMap account with the `_imports` suffix.
 1. Working [JOSM](https://josm.openstreetmap.de/) installation, with the [Conflation](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Conflation) plugin installed from Preferences > Plugins.
 1. *(Optional)* Text editor with advanced find/replace functionality, such as [BBEdit](https://www.barebones.com/products/bbedit/), [Notepad++](https://notepad-plus-plus.org/), or [Atom](https://atom.io/).
@@ -73,7 +76,7 @@ The overall workflow is to "merge" the DRCOG data into your OSM Data Layer, whil
    * occasional errors in the automatic import, such as the street name *Steele Street* being expanded to *Streeteele Street*
 1. Do not upload bad data to OSM, fix it before importing, or flag the task as having problems:
    * Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns, make sure you indicate the task number in your issue.
-			* Leave comments in the tasking manager.
+   * Leave comments in the tasking manager.
 1. Remove multi-part buildings from the .osm file layer before importing (buildings with multiple polygons side-by-side), these require special handling and are not being imported at this time. If you are already well trained in multi-part buildings and 3D building tags you may proceed with caution.
 
 ### Reviewing the data before uploading
@@ -110,12 +113,12 @@ If there is an existing building in OSM then you must decide how to conflate the
  
  * Delete the DRCOG dataset (layer) from JOSM: right-click the "drcog...osm" layer from the layers menu and select **Delete** - if you get a warning, make sure you did not miss any buildings (i.e. this layer should be completely empty if you have followed the workflow).
 
-* Now before uploading your OSM Data Layer, do one more check - Run **JOSM Validator** (SHIFT+V), and if there are errors, fix them. 
-![validator](https://cloud.githubusercontent.com/assets/353700/12942520/ddc572f4-d001-11e5-8cf6-399511cd47fa.gif) 
-
 ### Finally, upload your data
 
-* Select the OSM Data Layer.
+Before uploading your OSM Data Layer, do one more check - Run **JOSM Validator** (SHIFT+V), and if there are errors, fix them before uploading. 
+![validator](https://cloud.githubusercontent.com/assets/353700/12942520/ddc572f4-d001-11e5-8cf6-399511cd47fa.gif) 
+
+* Select and activate the OSM Data Layer.
 * Click the Upload button, the green up arrow button.
 
 ![screen shot 2016-04-02 at 3 53 02 pm](https://cloud.githubusercontent.com/assets/3673236/14229617/ad64e298-f8ec-11e5-9693-ba3f3a0e2085.png)
@@ -134,6 +137,21 @@ If there is an existing building in OSM then you must decide how to conflate the
 * Go back to the Tasking Manager and click **Mark task as done**. If necessary, leave a comment so if another mapper validates your edits they are aware (i.e. one building from satellite imagery not in import data; left alone).
 
 ## Fixing common problems
+
+### Is it really a building?
+
+Watch out for situations where something that isn't a building may have been traced as one. Do not import these "not a building" buildings. Common cases include:
+* Parked tractor trailers getting traced as sheds.
+* Boats, sandboxes or garden boxes in yards getting traced as sheds or garages.
+
+### Duplicate Addresses
+
+Duplicate addresses can occur in a few situations, and are easy to fix.
+
+1. The most common case is when a house and an accessory building are given the same address. This often occurs when the accessory building is not a `building=garage` or `building=shed` (which have addresses automatically removed), but something uncommon, such as a gazebo.
+   1. The fix is to simply remove the address tags from the accessory building before importing.
+1. Another common case is when multiple buildings in an apartment complex have the same address. In this case, if you believe this to be accurate, the duplicate addresses may remain (it is possible for multiple structures to have the same address).
+   1. In some cases, the address field may be the same, but the street name is something like `addr:street=Logan Street Bldg 4`. In this case, remove `Bldg 4` from the street name, and add a reference tag to indicate which building number the building is: `ref=4`.
 
 ### Building "slivers"
 
@@ -183,10 +201,18 @@ Then in your text editor you could search for the text `v='Logan St'`, and repla
 
 ## What to watch out for
 
+### When not to import a building
+
+1. The building already exists in OSM, well traced, with complete tags.
+   1. In this case, simply add any useful tags from the DRCOG building to the originally drawn building, and delete the building from you .osm file.
+   1. If the building exists in OSM, but the DRCOG trace is higher quality, then you can combine the buildings using the **Replace Geometry** command (CTRL+SHIFT+G). When asked to combine the tags, use the original mapper's tags whenever possible.
+1. The building is a 3D or multi-part building.
+   1. These are not formatted correctly in the current .osm files, and should not be imported as is. Correcting the multi-part buildings into compliant [OSM 3D buildings](https://wiki.openstreetmap.org/wiki/Simple_3D_buildings) is an advanced task outside the scope of this import (proceed with caution).
+1. The OSM data layer includes updated information about why the building may not exist anymore, such as a `construction=residential` area indicating that the buildings may have been demolished.
+
 ### Validate the import with your eyes before uploading!
 
  * Run the [JOSM validator](http://wiki.openstreetmap.org/wiki/JOSM/Validator). Check for any errors it detects.
- 
  * Inspect everything else with a critical eye! Don't trust that the validator or FIXME tags will catch everything. There may be other bugs that only you can detect. Use your human smarts!
  
 ### Conflating with existing data
@@ -221,6 +247,7 @@ Then in your text editor you could search for the text `v='Logan St'`, and repla
 
 ### How to communicate with other mappers
 
+ * Be responsive to comments that other OSM users make on your changesets. If there is a problem with your imports, stop and fix the problem before continuing.
  * JOSM [GeoChat](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/GeoChat) feature.
  * Come to one of the next OSM related [meetup groups](https://www.meetup.com/OSM-Colorado/pages/24662291/Colorado_Groups/) in Colorado.
  * Befriend other mappers on openstreetmap.org!
