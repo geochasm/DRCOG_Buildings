@@ -73,7 +73,6 @@ The overall workflow is to "merge" the DRCOG data into your OSM Data Layer, whil
 1. With the .osm file layer activated (no other OSM map data visible), run the **JOSM Validator** (SHIFT+V) to look for errors. Common errors at this stage can include multiple buildings with the same address (usually an error where a house and a garage or shed have been given the same address tags). Refer to the section below on **fixing common errors** for solutions and guidelines.
 1. While still in the new .osm file layer, **Select All** (CTRL+A) to select all objects, and then **Deselect Nodes** (SHIFT+U) to select all of the buildings. In the Selection window on the right side of the screen, scroll through the list of selected buildings to look for malformed street names. Examples of bad street names include:
    * unexpanded abbreviations (Ct instead of Court, or Ln instead of Lane)
-   * use of the directional prefix "North" (not used in City and County of Denver)
    * occasional errors in the automatic import, such as the street name *Steele Street* being expanded to *Streeteele Street*
 1. Do not upload bad data to OSM, fix it before importing, or flag the task as having problems:
    * Use github [issues](https://github.com/geochasm/DRCOG_Buildings/issues) to flag concerns, make sure you indicate the task number in your issue.
