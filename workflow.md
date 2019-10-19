@@ -197,7 +197,7 @@ If during your initial review of the .osm file in JOSM you find that there is a 
 ```
 Then in your text editor you could search for the text `v='Logan St'`, and replace with the text `v='Logan Street'` to repair all instances of the error in the .osm file.
 
-**Tip:** This can be used to repair many small problems in the .osm file, such as unexpanded street suffixes, incorrect "North" streets (City and County of Denver does not currently use the "North" prefix anywhere, or even strange import errors, such as `Steele Street` being expanded to `Streeteele Street` (real example).
+**Tip:** This can be used to repair many small problems in the .osm file, such as unexpanded street suffixes, or strange import errors, such as `Steele Street` being expanded to `Streeteele Street` (real example).
 
 ## What to watch out for
 
